@@ -7,7 +7,7 @@ Focaremos na Blue Pill (STM32F103C8T6), uma placa versátil, potente e amplament
 
 ---
 
-#O que vamos construir?
+# O que vamos construir?
 O objetivo deste GitBook é levar você do download da ferramenta até o seu primeiro firmware funcional. Ao final desta leitura, você terá:
 
 - O STM32CubeIDE instalado e pronto para uso no seu Ubuntu.
