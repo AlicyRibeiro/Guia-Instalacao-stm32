@@ -3,7 +3,7 @@
 * [Introdução](introducao.md)
 
 ## Instalação
-* [Download do IDE](download.md)
+* [Download do IDE](instalacao/download.md)
 * [Executando o Instalador](instalacao/script-sh.md)
 
 ## Configuração de Ambiente
