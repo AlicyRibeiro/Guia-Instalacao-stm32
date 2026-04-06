@@ -18,7 +18,7 @@ O primeiro passo é acessar a zona de desenvolvedores da ST e escolher a versão
 
 7. Arquivo: Você receberá um arquivo .zip (`ex: en.st-stm32cubeide_1.x.x_xxxx_x86_64.sh.zip`) na sua pasta de Downloads.
 
-![opção de instalação](../imagens/baixado.png)
+![arquivo baixado](../imagens/baixado.png)
 
 ---
 
@@ -54,7 +54,7 @@ chmod +x st-stm32cubeide_2.1.0_27993_20260219_1630_amd64.sh
 
 - **Importante:** Quando o instalador perguntar: "Do you want to install Segger J-Link udev rules? [Y/n]", digite Y. Isso configura as permissões necessárias para que seu computador acesse o hardware (gravador) via USB sem erros de permissão.
 
-![opção de instalação](../imagens/licenca.png)
+![contrato de licença](../imagens/licenca.png)
 
 ---
 
@@ -70,8 +70,21 @@ Você pode navegar até a pasta e rodar o binário:
 cd /home/ana-ribeiro/st/stm32cubeide_2.1.0
 ./stm32cubeide
 ```
+![opção de atalho](../imagens/atalho1.png)
 
-![opção de instalação](../imagens/atalho1.png)
+---
+
+**Opção 2**: Menu de Aplicativos (Interface Gráfica)
+
+Se você aceitou todas as opções durante a instalação via terminal, o Ubuntu automaticamente registrará o STM32CubeIDE na sua lista de programas.
+
+- Pressione a tecla Super (a tecla com o logo do Windows) no seu teclado.
+- Digite "STM32" na barra de pesquisa.
+- O ícone azul da IDE deve aparecer. Você pode clicar com o botão direito e selecionar "Adicionar aos Favoritos" para que ele fique sempre visível na sua barra lateral (Dock).
+
+    ⚠️ Nota para Usuários de Ubuntu Moderno:
+    Se o ícone não aparecer imediatamente, tente reiniciar sua sessão (Log out e Log in). O sistema às vezes precisa desse "refresh" para indexar o novo atalho criado pelo instalador.
+
 
 
 
