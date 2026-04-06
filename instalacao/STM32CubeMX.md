@@ -10,15 +10,22 @@ Existem duas formas de utilizá-lo:
 
 ---
 
-#   📥 Download
+#    Download
 
-1. Acesse o site: STM32CubeMX Official Page.
-2. Get Software: Escolha a opção STM32CubeMX-Lin (Linux).
+1. Acesse o site: [STM32CubeMX Official Page.](https://www.st.com/en/development-tools/stm32cubemx.html?dl=redirect)
+2. Get Software: Escolha a opção STM32CubeMX (Linux).
+
+![opção de download](../imagens/cubeMX.png)
+
 3. E-mail: Assim como na IDE, você receberá um link de download por e-mail após preencher os dados de convidado.
+
+
+![arquivo baixado](../imagens/mx_baixado.png)
+
 
 ---
 
-# 📦 Instalação no Ubuntu
+#  Instalação no Ubuntu
 
 O instalador do CubeMX para Linux é um pouco diferente (ele usa Java). Siga estes comandos no terminal:
 Extrair e Preparar
