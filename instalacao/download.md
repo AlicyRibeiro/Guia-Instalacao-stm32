@@ -11,9 +11,14 @@ O primeiro passo é acessar a zona de desenvolvedores da ST e escolher a versão
 1. Acesse o site oficial: [STM32CUBE - IDE](https://www.st.com/content/st_com/en/stm32-mcu-developer-zone.html)
 2. Selecione a ferramenta: Vá em Develop and debug e escolha a opção STM32CubeIDE.
 3. Escolha a versão: Procure pelo instalador Generic Linux (`ex: Versão 11.1.0 ou superior`).
-![opção de instalação](imagens/baixando.png)
+![opção de instalação](../imagens/baixando.png)
+
 5. Inicie o download: Você pode fazer login ou baixar como convidado. Após preencher seus dados, um link de download será enviado para o seu e-mail.
-6. Arquivo: Você receberá um arquivo .zip (`ex: en.st-stm32cubeide_1.x.x_xxxx_x86_64.sh.zip`) na sua pasta de Downloads.
+![opção de instalação](../imagens/login.png)
+
+7. Arquivo: Você receberá um arquivo .zip (`ex: en.st-stm32cubeide_1.x.x_xxxx_x86_64.sh.zip`) na sua pasta de Downloads.
+
+![opção de instalação](../imagens/baixado.png)
 
 ---
 
@@ -30,29 +35,30 @@ cd ~/Downloads
 
 Lembre-se de ajustar o nome do arquivo para a versão exata que você baixou:
 ```
-unzip st-stm32cubeide_1.11.0_13638_20221122_1308_amd64.sh.zip
+unzip st-stm32cubeide_2.1.0_27993_20260219_1630_amd64.sh.zip
 ```
 
 **Passo 3:** Conceda permissão de execução
 ```
-chmod +x st-stm32cubeide_1.11.0_13638_20221122_1308_amd64.sh
+chmod +x st-stm32cubeide_2.1.0_27993_20260219_1630_amd64.sh
 ```
 
 **Passo 4:** Execute o instalador
 ```
-
-./st-stm32cubeide_1.11.0_13638_20221122_1308_amd64.sh
+./st-stm32cubeide_2.1.0_27993_20260219_1630_amd64.sh
 ```
 
 ***💡 Durante a Instalação:*** > * Aceite o contrato de licença.
 
-- Escolha o diretório de instalação (`Ex: /home/ana-ribeiro/st/stm32cubeide_1.11.0`).
+- Escolha o diretório de instalação (`Ex: /home/ana-ribeiro/st/stm32cubeide_2.1.0`).
 
 - **Importante:** Quando o instalador perguntar: "Do you want to install Segger J-Link udev rules? [Y/n]", digite Y. Isso configura as permissões necessárias para que seu computador acesse o hardware (gravador) via USB sem erros de permissão.
 
+![opção de instalação](../imagens/licenca.png)
+
 ---
 
-# 3. Executando e Criando Atalhos
+# 3. Executando e Criando Atalho
 
 Após concluir a instalação, você tem duas formas principais de abrir o IDE.
 
@@ -61,22 +67,13 @@ Após concluir a instalação, você tem duas formas principais de abrir o IDE.
 Você pode navegar até a pasta e rodar o binário:
 
 ```
-cd /home/ana-ribeiro/st/stm32cubeide_1.11.0
+cd /home/ana-ribeiro/st/stm32cubeide_2.1.0
 ./stm32cubeide
 ```
 
-**Opção 2:** Criar um Link Simbólico (Atalho no Terminal)
+![opção de instalação](../imagens/atalho1.png)
 
-Para facilitar o seu dia a dia no laboratório, você pode criar um link simbólico para abrir o IDE de qualquer lugar apenas digitando `stm32cubeide`:
 
-```
-sudo ln -s /home/ana-ribeiro/st/stm32cubeide_1.11.0/stm32cubeide /usr/local/bin/stm32cubeide
-```
-
-Agora, basta abrir um novo terminal e digitar:
-```
-stm32cubeide
-```
 
 ---
 
