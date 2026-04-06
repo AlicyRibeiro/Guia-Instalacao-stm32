@@ -8,11 +8,12 @@ Nesta página, vamos cobrir o processo completo para obter o STM32CubeIDE e inst
 
 O primeiro passo é acessar a zona de desenvolvedores da ST e escolher a versão correta para o ecossistema Linux.
 
-1. Acesse o site oficial: STM32 MCU Developer Zone.
+1. Acesse o site oficial: [STM32CUBE - IDE](https://www.st.com/content/st_com/en/stm32-mcu-developer-zone.html)
 2. Selecione a ferramenta: Vá em Develop and debug e escolha a opção STM32CubeIDE.
 3. Escolha a versão: Procure pelo instalador Generic Linux (`ex: Versão 11.1.0 ou superior`).
-4. Inicie o download: Você pode fazer login ou baixar como convidado. Após preencher seus dados, um link de download será enviado para o seu e-mail.
-5. Arquivo: Você receberá um arquivo .zip (`ex: en.st-stm32cubeide_1.x.x_xxxx_x86_64.sh.zip`) na sua pasta de Downloads.
+![opção de instalação](imagens/baixando.png)
+5. Inicie o download: Você pode fazer login ou baixar como convidado. Após preencher seus dados, um link de download será enviado para o seu e-mail.
+6. Arquivo: Você receberá um arquivo .zip (`ex: en.st-stm32cubeide_1.x.x_xxxx_x86_64.sh.zip`) na sua pasta de Downloads.
 
 ---
 
