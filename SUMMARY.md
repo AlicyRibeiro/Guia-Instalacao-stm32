@@ -6,10 +6,6 @@
 * [Download e Instalção do IDE](instalacao/download.md)
 * [Instalando o STM32CubeMX](instalacao/STM32CubeMX.md)
 
-## ⚙️ Configuração de Ambiente
-* [Permissões USB (udev rules)](configuracao/udev-rules.md)
-* [Criando Atalho no Terminal](configuracao/atalho.md)
-
 
 ## 🚀 Mão na Massa
 * [Fluxo de Trabalho: Do CubeMX à IDE](pratica/fluxo-trabalho.md)
