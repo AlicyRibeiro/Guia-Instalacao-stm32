@@ -47,14 +47,12 @@ cd mx_pasta_extraida
 ```
 # Conceda permissão de execução (ajuste para a sua versão)
 chmod +x SetupSTM32CubeMX-6.16.1.linux
-
 ```
 
 **Passo 2. Executando o Instalador Gráfico**
 
 Após dar a permissão, você pode executar o arquivo como um programa:
 ```
-
 ./SetupSTM32CubeMX-6.16.1
 ```
 
