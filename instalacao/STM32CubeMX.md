@@ -1,4 +1,4 @@
-# 🛠️ STM32CubeMX: O Configurador Gráfico
+# STM32CubeMX: O Configurador Gráfico
 
 O STM32CubeMX é o cérebro por trás da arquitetura ARM da ST. Ele é um gerador de código visual: você configura o hardware (pinos e clocks) e ele escreve os drivers complexos para você.
 
