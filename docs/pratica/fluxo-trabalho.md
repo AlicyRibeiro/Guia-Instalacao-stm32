@@ -30,6 +30,8 @@ Ao final, ele gera automaticamente a estrutura inicial do projeto, incluindo arq
 
 Em outras palavras, o CubeMX é responsável por preparar o projeto antes da programação.
 
+![Tela principal do STM32CubeMX](images/mx_pronto.png)
+
 ---
 
 ## STM32CubeIDE
@@ -49,6 +51,9 @@ Na STM32CubeIDE, você poderá:
 
 A IDE reúne editor de código, compilador, gravador e depurador em um único ambiente.
 
+
+![Tela principal da STM32CubeIDE](assets/images/cubeide-main.png)
+
 ---
 
 ## Como as duas ferramentas trabalham juntas
@@ -64,7 +69,11 @@ O fluxo normalmente funciona desta forma:
 7. Gravar na placa
 8. Testar e depurar
 
+
+![Fluxo CubeMX para CubeIDE](assets/images/workflow.png)
+
 ---
+
 ## Diferença entre configuração e programação
 
 No CubeMX, você configura o hardware do microcontrolador, definindo quais pinos e periféricos serão utilizados.
@@ -77,6 +86,7 @@ Por exemplo:
 - IDE: escrever o código para acender e apagar o LED
 
 ---
+
 ## O que acontece quando o código é gerado
 
 Quando o CubeMX gera o projeto, vários arquivos e pastas são criados automaticamente.
@@ -92,6 +102,7 @@ No início, você usará principalmente o arquivo `main.c`, mas com o tempo apre
 
 
 ---
+
 ## Exemplo prático
 
 Imagine que você deseja fazer um LED piscar.
@@ -105,6 +116,10 @@ Nesse caso:
 
 Ou seja, o CubeMX prepara a estrutura e a IDE é usada para programar e executar o projeto.
 
+
+![Configuração do PC13 como saída](assets/images/pc13-config.png)
+
+
 ---
 
 ## Resumo
@@ -115,12 +130,3 @@ De forma simplificada:
 * STM32CubeIDE = escrita do código, compilação, gravação e debug
 
 Entender a função de cada ferramenta ajuda bastante no início, porque evita confundir configuração de hardware com programação da aplicação.
-
-
-![Tela principal do STM32CubeMX](assets/images/cubemx-home.png)
-
-![Tela principal da STM32CubeIDE](assets/images/cubeide-main.png)
-
-![Fluxo CubeMX para CubeIDE](assets/images/workflow.png)
-
-![Configuração do PC13 como saída](assets/images/pc13-config.png)
