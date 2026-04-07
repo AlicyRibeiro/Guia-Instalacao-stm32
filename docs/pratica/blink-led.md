@@ -216,9 +216,25 @@ Esse é um dos testes mais importantes do início, porque confirma que:
 
 ---
 
+## Primeira execução e configuração de debug
+
+Na primeira vez que o projeto for executado, a STM32CubeIDE pode abrir uma janela para criar uma configuração de debug.
+
+Normalmente, basta:
+
+* Selecionar `STM32 Cortex-M C/C++ Application`
+* Confirmar o arquivo `.elf` do projeto
+* Escolher o programador conectado, como ST-Link
+* Clicar em `Debug` ou `Run`
+
+Depois da primeira configuração, a IDE costuma reutilizar essas opções automaticamente nas próximas execuções.
+
+![Janela de configuração de debug da STM32CubeIDE](assets/images/blink/config-debug.png)
+
+*Figura 10. Janela de configuração de debug exibida na primeira execução do projeto.*
+
+---
+
 ## Resumo
 
-Neste exemplo, o CubeMX é usado para configurar o **PC13 como saída digital** e gerar a estrutura inicial do projeto. Depois, na IDE, o arquivo `main.c` recebe o código da aplicação que faz o LED piscar com `HAL_GPIO_TogglePin()` ou `HAL_GPIO_WritePin()`. Esse fluxo aparece nos dois materiais usados como base para esta página. ([Blog Eletrogate][1])
-
-[1]: https://blog.eletrogate.com/bluepill-com-stm32cubeide/ "BluePill com STM32CubeIDE - Blog Eletrogate"
-[2]: https://deepbluembedded.com/stm32-gpio-write-pin-digital-output-lab/ "STM32 GPIO Example HAL Write_Pin & Toggle Pin (Digital Output)"
+Neste exemplo, o CubeMX é usado para configurar o **PC13 como saída digital** e gerar a estrutura inicial do projeto. Depois, na IDE, o arquivo `main.c` recebe o código da aplicação que faz o LED piscar com `HAL_GPIO_TogglePin()` ou `HAL_GPIO_WritePin()`. Esse fluxo aparece nos dois materiais usados como base para esta página. 
