@@ -20,3 +20,5 @@
 * [IDE: Bug do Arquivo Assembly (.s)](erros/bug-assembly.md)
 * [Arquivos: O arquivo .ioc não abre o gráfico](erros/abrir-ioc.md)
 
+## 📚 Referências e Extras
+* [Referências](extras/refe.md)
