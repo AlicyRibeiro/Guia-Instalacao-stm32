@@ -85,14 +85,3 @@ Se você prefere não usar o terminal, pode fazer o processo manualmente como eu
 4. **Executar:** Feche a janela de propriedades e dê um duplo clique no arquivo (ou clique com o botão direito e selecione "Executar").
 
 **Nota:** Assim que você executar (por qualquer um dos métodos), a janela de instalação oficial da ST será aberta. Basta seguir o assistente (Next/Avançar), aceitar os termos e escolher a pasta de destino.
-
----
-
-# O Novo Fluxo de Trabalho (Recomendado)
-
-Diferente das versões antigas, o vídeo tutorial da comunidade STM32 sugere que o caminho mais seguro para não quebrar o seu projeto é o seguinte:
-
-1. Inicie pelo CubeMX Standalone: Configure sua Blue Pill (STM32F103C8).
-2. Project Manager: No campo Toolchain/IDE, selecione STM32CubeIDE.
-3. Generate Code: Clique no botão de engrenagem no topo.
-4. Open Project: Após gerar, clique no botão Open Project. Isso forçará a abertura da IDE já com todos os caminhos de arquivos configurados corretamente para o Linux.
