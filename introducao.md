@@ -1,9 +1,25 @@
 # Introdução
-Bem-vindo ao Guia de Instalação e Início Rápido STM32 no Ubuntu.
 
-Este material foi desenvolvido para ser o seu ponto de partida no mundo dos microcontroladores STM32 utilizando sistemas Linux. Se você está dando os primeiros passos em sistemas embarcados ou quer migrar seu fluxo de trabalho para uma plataforma profissional, este guia foi feito para você.
+A STM32F103C8T6, popularmente conhecida através da placa Blue Pill, é uma das opções mais acessíveis e utilizadas para quem deseja iniciar no desenvolvimento de sistemas embarcados com microcontroladores ARM.
 
-Focaremos na Blue Pill (STM32F103C8T6), uma placa versátil, potente e amplamente utilizada no meio acadêmico devido ao seu excelente custo-benefício e arquitetura ARM Cortex-M3.
+Ela pertence à família STM32 da STMicroelectronics e utiliza um processador baseado na arquitetura ARM Cortex-M3, oferecendo um bom equilíbrio entre desempenho, baixo custo e grande quantidade de recursos integrados.
+
+Entre suas principais características estão:
+
+* Clock de até 72 MHz
+* 64 KB de memória Flash
+* 20 KB de memória RAM
+* GPIOs configuráveis
+* Timers
+* Comunicação UART, SPI e I2C
+* Conversor ADC de 12 bits
+* Baixo consumo de energia
+
+Por ser uma placa muito popular, existe uma grande quantidade de exemplos, tutoriais e bibliotecas disponíveis na internet, o que facilita bastante o aprendizado.
+
+Este guia foi desenvolvido como material de apoio para a disciplina de Microcontroladores da Universidade Federal do Ceará, com o objetivo de auxiliar estudantes nos primeiros contatos com a plataforma STM32.
+
+Ao longo deste material, será apresentado o passo a passo para configurar o ambiente de desenvolvimento, instalar as ferramentas necessárias, criar o primeiro projeto e entender o fluxo básico de trabalho utilizando a STM32F103C8T6.
 
 ---
 
