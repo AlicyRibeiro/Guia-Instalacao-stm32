@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🌟 Introdução](introducao.md)
+* [Introdução](introducao.md)
 
 ## 📥 Instalação
 * [Download e Instalção do IDE](instalacao/download.md)
@@ -10,9 +10,11 @@
 * [Permissões USB (udev rules)](configuracao/udev-rules.md)
 * [Criando Atalho no Terminal](configuracao/atalho.md)
 
-## 🛠️ Solução de Problemas (Linux Fixes)
-* [Seletor de Chips Vazio (Wayland Fix)](fixes/tela-vazia.md)
-* [Erro: main.h não encontrado](fixes/erro-include.md)
 
-## 🚀 Prática
-* [Primeiro Blink (PC13)](exemplos/blink-led.md)
+## 🚀 Mão na Massa
+* [Fluxo de Trabalho: Do CubeMX à IDE](pratica/fluxo-trabalho.md)
+* [Regras de Ouro: Onde escrever seu código](pratica/regras-codigo.md)
+* [Primeiro Blink (PC13)](pratica/blink-led.md)
+
+
+## 🛠️ Solução de Problemas 
