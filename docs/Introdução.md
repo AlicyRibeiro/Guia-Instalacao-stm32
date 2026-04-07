@@ -1,4 +1,6 @@
 
+![Capa do Guia de Instalação STM32 e Fluxo de Trabalho com Blue Pill](imagens/capa_intro.png)
+
 A STM32F103C8T6, popularmente conhecida através da placa Blue Pill, é uma das opções mais acessíveis e utilizadas para quem deseja iniciar no desenvolvimento de sistemas embarcados com microcontroladores ARM.
 
 Ela pertence à família STM32 da STMicroelectronics e utiliza um processador baseado na arquitetura ARM Cortex-M3, oferecendo um bom equilíbrio entre desempenho, baixo custo e grande quantidade de recursos integrados.
