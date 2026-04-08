@@ -11,7 +11,7 @@ O objetivo deste guia é documentar as soluções para erros comuns de interface
 * Download da IDE 
 * Instalação da IDE
 * Possiveis erros
-* Exemplos simples
+* Exemplo simple
 
 ---
 
