@@ -9,8 +9,4 @@ Algumas referências úteis incluem:
 * [Materiais do site DeepBlueEmbedded](https://deepbluembedded.com/stm32-gpio-write-pin-digital-output-lab/)
 * [Fóruns e discussões da comunidade STM32](https://www.linkedin.com/pulse/how-download-install-stm32cubeide-ubuntu-jos%C3%A9-manuel-barajas-ram%C3%ADrez-t2rwc/)
 * [Vídeo Auxiliar de Instalação](https://www.youtube.com/watch?v=6zpMXbjjNs8)
-    
-Além deste guia, outros projetos, anotações e materiais desenvolvidos durante a graduação podem ser encontrados no meu [GitHub](https://github.com/AlicyRibeiro):
-
-Lá você encontrará repositórios relacionados a programação, sistemas embarcados, arquitetura de computadores, eletrônica digital e outros conteúdos estudados ao longo do curso de Engenharia de Computação da Universidade Federal do Ceará.
-
+  
