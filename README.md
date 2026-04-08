@@ -2,8 +2,6 @@
 
 Este repositório contém um guia passo a passo para instalar e configurar o ambiente de desenvolvimento STM32CubeIDE em sistemas Linux (Ubuntu), focado na placa Blue Pill (STM32F103C8T6).
 
-O objetivo deste guia é documentar as soluções para erros comuns de interface (Wayland), permissões de hardware e caminhos de compilação que estudantes de Engenharia costumam enfrentar.
-
 ---
 
 # 🚀 O que este guia resolve?
@@ -19,7 +17,7 @@ O objetivo deste guia é documentar as soluções para erros comuns de interface
 
 Para um passo a passo mais detalhado, com prints e explicações de cada erro, acesse nossa documentação oficial no GitBook:
 
-🔗 [LINK DO SEU GITBOOK AQUI]
+🔗 [Link para o Gitbook](https://trabalhos-1.gitbook.io/stm32/)
 
 ---
 
