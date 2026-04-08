@@ -30,7 +30,7 @@ Ao final, ele gera automaticamente a estrutura inicial do projeto, incluindo arq
 
 Em outras palavras, o CubeMX é responsável por preparar o projeto antes da programação.
 
-![Tela principal do STM32CubeMX](images/mx_pronto.png)
+![Tela principal do STM32CubeMX](../imagens/mx_pronto.png)
 
 ---
 
@@ -52,7 +52,7 @@ Na STM32CubeIDE, você poderá:
 A IDE reúne editor de código, compilador, gravador e depurador em um único ambiente.
 
 
-![Tela principal da STM32CubeIDE](assets/images/cubeide-main.png)
+![Tela principal da STM32CubeIDE](../imagens/cubeide-main.png)
 
 ---
 
@@ -70,7 +70,7 @@ O fluxo normalmente funciona desta forma:
 8. Testar e depurar
 
 
-![Fluxo CubeMX para CubeIDE](assets/images/workflow.png)
+![Fluxo CubeMX para CubeIDE](../imagens/workflow.png)
 
 ---
 
@@ -117,7 +117,7 @@ Nesse caso:
 Ou seja, o CubeMX prepara a estrutura e a IDE é usada para programar e executar o projeto.
 
 
-![Configuração do PC13 como saída](assets/images/pc13-config.png)
+![Configuração do PC13 como saída](../imagens/pc13-config.png)
 
 
 ---
