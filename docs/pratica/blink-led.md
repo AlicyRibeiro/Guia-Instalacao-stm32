@@ -2,7 +2,7 @@
 
 Depois de configurar o ambiente e entender o papel do STM32CubeMX e da STM32CubeIDE, um dos primeiros testes mais importantes é fazer o LED piscar.
 
-Esse exemplo é útil porque permite verificar se o projeto foi criado corretamente, se o pino foi configurado como saída digital e se o código está sendo gravado e executado na placa como esperado. O tutorial da Eletrogate usa esse fluxo com a Blue Pill, configurando o **PC13** como saída e inserindo o código do blink dentro do `while (1)`. ([Blog Eletrogate][1])
+Esse exemplo é útil porque permite verificar se o projeto foi criado corretamente, se o pino foi configurado como saída digital e se o código está sendo gravado e executado na placa como esperado. O tutorial da Eletrogate usa esse fluxo com a Blue Pill, configurando o **PC13** como saída e inserindo o código do blink dentro do `while (1)`. 
 
 ---
 
@@ -14,7 +14,7 @@ Ao final, o programa fará o LED alternar entre ligado e desligado em um interva
 
 ![Tela inicial do projeto na STM32CubeIDE](../imagens/tela-inicial-projeto.png)
 
-*Figura 1. Tela inicial da STM32CubeIDE para criação de um novo projeto.*
+*Figura 1. Tela inicial da STM32CubeMX para criação de um novo projeto.*
 
 
 ---
@@ -27,21 +27,44 @@ Antes de escrever o código, é necessário configurar o projeto.
 
 ### 1. Criar o projeto
 
-Abra a STM32CubeIDE e inicie um novo projeto STM32. Em seguida, selecione o microcontrolador da placa e avance para a tela de configuração. No material da Eletrogate, o projeto foi iniciado buscando o alvo **STM32F103C6T6A** no seletor da IDE. ([Blog Eletrogate][1])
+Existem duas formas mais comuns de iniciar um projeto STM32:
 
-![Seleção do microcontrolador no início do projeto](../imagensselecao-microcontrolador.png)
+**Opção 1: STM32CubeIDE com CubeMX integrado (versões 1.x.x)**
+
+Na STM32CubeIDE, clique em:
+
+File -> New -> STM32 Project
+
+Em seguida, selecione o microcontrolador da placa e avance para a tela de configuração. O projeto foi iniciado buscando o alvo **STM32F103C6T6A** no seletor da IDE. 
+
+![Seleção do microcontrolador no início do projeto](../imagens/selecao-microcontrolador.png)
 
 *Figura 2. Seleção do microcontrolador ou da placa no assistente de criação do projeto.*
+
+**Opção 2: STM32CubeMX separado**
+
+Se estiver usando o CubeMX separado da IDE:
+
+1. Abra o STM32CubeMX
+2. Clique em Access to MCU Selector
+
+![Access to MCU Selector](../imagens/MCU.png)
+
+3. Escolha o microcontrolador desejado
+
+![Seleção do microcontrolador no início do projeto](../imagens/selecao-microcontrolador.png)
+
+
+Nos dois casos, ao final você chegará na mesma tela de configuração de pinos, clocks e periféricos.
 
 ---
 ### 2. Configurar o sistema
 
-Na seção **SYS**, defina:
+Na seção **System core**, vá ate **SYS** defina:
 
 * **Debug** como `Serial Wire`
 * **Timebase Source** como `SysTick`
 
-Essas opções aparecem no passo a passo mostrado pela Eletrogate para a configuração inicial do projeto. ([Blog Eletrogate][1])
 
 ![Configuração da seção SYS](../imagens/config-sys.png)
 
@@ -51,31 +74,57 @@ Essas opções aparecem no passo a passo mostrado pela Eletrogate para a configu
 
 ### 3. Configurar o clock
 
-Na seção **RCC**, selecione:
+Na seção **RCC** ainda em **System core** , selecione:
 
 * **High Speed Clock (HSE)** como `Crystal/Ceramic Resonator`
 
-Depois, na aba **Clock Configuration**, ajuste a fonte do PLL e o clock do sistema. No exemplo da Eletrogate, o fluxo usa **HSE** como fonte do PLL e **PLLCLK** como clock do sistema. ([Blog Eletrogate][1])
-
 ![Configuração do clock no CubeMX](../imagens/config-clock.png)
 
-*Figura 4. Ajuste do clock do sistema na aba Clock Configuration.*
 
 ---
 
 ### 4. Configurar o pino PC13
 
-No campo **Pinout View**, clique no pino **PC13** e selecione a função **GPIO_Output**. O tutorial da Eletrogate usa exatamente esse pino para o exemplo do LED e também sugere atribuir um rótulo ao pino para facilitar a leitura do código gerado. ([Blog Eletrogate][1])
+No campo **Pinout View**, clique no pino **PC13** e selecione a função **GPIO_Output** para configurá-lo como saída digital.
 
 ![Configuração do PC13 como GPIO\_Output](../imagens/config-pc13.png)
 
 *Figura 5. Configuração do pino PC13 como saída digital.*
 
+Em seguida, clique, sobre o mesmo pino, com o botão direito do mouse, fazendo com que seja exibido o respectivo menu. Neste, clique em “Enter User Label”.
+
+No campo agora aberto, digite “pinoLED”.
+
+![label do pino](../imagens/label.png)
+
 ---
 
-### 5. Gerar o código
+### 5. Clock Configuration
 
-Depois de concluir as configurações, salve o projeto para gerar automaticamente os arquivos. A Eletrogate mostra que, ao salvar, a IDE pergunta se o código deve ser criado, e o CubeMX gera toda a estrutura inicial necessária para o projeto. ([Blog Eletrogate][1])
+Depois, na aba **Clock Configuration**, ajuste a fonte do PLL e o clock do sistema. O fluxo usa **HSE** como fonte do PLL e **PLLCLK** como clock do sistema. 
+
+![Configuração do clock no CubeMX](../imagens/config-clock2.png)
+
+*Figura 4. Ajuste do clock do sistema na aba Clock Configuration.*
+
+---
+
+### 6. Gerar o código
+
+Depois de concluir as configurações, salve o projeto para gerar automaticamente os arquivos. Tecle “Ctrl+S”, para salvar as configurações. Isso fará surgir uma janela questionando se o código correspondente a estas configurações deve ser criado. Clique em “Yes”.
+
+Caso você esteja usando o CubeMX separado do CubeIDE siga  os seguintes passos:
+
+1. Siga para a aba **Project Manager**.
+2. Na opção **Project Name** coloque o nome da prática.
+> È importante que seja nomeado pois o CubeMX não deixará gerar o codigo sem nome
+3. Na opção **Project Location** coloque o caminho da pasta que você quer usar para a prática.
+4. na opção **Toolchain/IDE** selecione  **STM32CubeIDE**
+
+![Project Manager](../imagens/Project_Manager.png)
+
+5. Após seguir esses passos na aba **Project Manager** clique na opçao que fica no carto superior esquerdo chamada **GENERATE CODE**
+
 
 ![Janela de geração de código](../imagens/geracao-codigo.png)
 
@@ -85,9 +134,9 @@ Depois de concluir as configurações, salve o projeto para gerar automaticament
 
 ## Código do blink
 
-Depois da geração do projeto, a estrutura básica do `main.c` já estará pronta. O material do DeepBlueEmbedded destaca que o projeto inicial chama funções como `HAL_Init()`, `SystemClock_Config()` e `MX_GPIO_Init()` antes de entrar no laço principal, deixando o `while (1)` como local natural para a lógica da aplicação. ([DeepBlue][2])
+Depois da geração do projeto, a estrutura básica do `main.c` já estará pronta. O projeto inicial chama funções como `HAL_Init()`, `SystemClock_Config()` e `MX_GPIO_Init()` antes de entrar no laço principal, deixando o `while (1)` como local natural para a lógica da aplicação. 
 
-No exemplo da Eletrogate, o blink é implementado com `HAL_GPIO_TogglePin()` e `HAL_Delay(500)`. ([Blog Eletrogate][1])
+Nesse exemplo, o blink é implementado com `HAL_GPIO_TogglePin()` e `HAL_Delay(500)`. 
 
 ```c
 while (1)
@@ -105,7 +154,7 @@ while (1)
 
 ## O que esse código faz
 
-A função `HAL_GPIO_TogglePin()` alterna o estado lógico do pino configurado como saída. Já a função `HAL_Delay()` cria uma espera em milissegundos. O DeepBlueEmbedded usa exatamente essa ideia para demonstrar o controle de uma saída digital com a HAL. ([DeepBlue][2])
+A função `HAL_GPIO_TogglePin()` alterna o estado lógico do pino configurado como saída. Já a função `HAL_Delay()` cria uma espera em milissegundos. O DeepBlueEmbedded usa exatamente essa ideia para demonstrar o controle de uma saída digital com a HAL. 
 
 Nesse caso:
 
@@ -119,7 +168,7 @@ Assim, o LED pisca em intervalos regulares.
 
 ## Outra forma de fazer
 
-Além de `HAL_GPIO_TogglePin()`, o DeepBlueEmbedded também mostra que o mesmo efeito pode ser obtido com `HAL_GPIO_WritePin()`, ligando e desligando o pino manualmente. ([DeepBlue][2])
+Além de `HAL_GPIO_TogglePin()`, o DeepBlueEmbedded também mostra que o mesmo efeito pode ser obtido com `HAL_GPIO_WritePin()`, ligando e desligando o pino manualmente. 
 
 ```c
 while (1)
@@ -142,7 +191,7 @@ As duas abordagens servem para o mesmo objetivo. Para um primeiro teste, a vers�
 
 ## Onde escrever esse código
 
-Esse trecho deve ser colocado dentro da região reservada ao usuário no `while (1)`, respeitando as marcações `USER CODE BEGIN` e `USER CODE END`. A própria Eletrogate mostra o código do blink inserido dentro da área da aplicação no `main.c`. ([Blog Eletrogate][1])
+Esse trecho deve ser colocado dentro da região reservada ao usuário no `while (1)`, respeitando as marcações `USER CODE BEGIN` e `USER CODE END`. 
 
 ```c
 /* USER CODE BEGIN WHILE */
@@ -156,9 +205,6 @@ while (1)
 }
 ```
 
-![Região USER CODE dentro do while](../imagens/user-code-while.png)
-
-*Figura 9. Região correta para inserir a lógica do blink no `main.c`.*
 
 ---
 
@@ -218,7 +264,8 @@ Esse é um dos testes mais importantes do início, porque confirma que:
 
 ## Primeira execução e configuração de debug
 
-Na primeira vez que o projeto for executado, a STM32CubeIDE pode abrir uma janela para criar uma configuração de debug.
+Na primeira vez que o projeto for executado, a STM32CubeIDE pode abrir uma janela para criar uma configuração de debug. **Na versão 2.1.0 vai abrir uma janela com á seguir**
+
 
 Normalmente, basta:
 
@@ -229,9 +276,6 @@ Normalmente, basta:
 
 Depois da primeira configuração, a IDE costuma reutilizar essas opções automaticamente nas próximas execuções.
 
-![Janela de configuração de debug da STM32CubeIDE](../imagens/config-debug.png)
-
-*Figura 10. Janela de configuração de debug exibida na primeira execução do projeto.*
 
 ---
 
