@@ -18,7 +18,7 @@ Falta de permissão de acesso ao dispositivo USB.
 
 ---
 
-# Solução
+## Solução
 
 Instale as regras udev da ST para permitir o acesso correto ao programador.
 
