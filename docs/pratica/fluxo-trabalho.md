@@ -117,8 +117,6 @@ Nesse caso:
 Ou seja, o CubeMX prepara a estrutura e a IDE é usada para programar e executar o projeto.
 
 
-![Configuração do PC13 como saída](../imagens/pc13-config.png)
-
 
 ---
 
