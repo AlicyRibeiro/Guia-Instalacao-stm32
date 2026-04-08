@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introdução](Introdução.md)
+* [Guia de Instalação STM32CubeIDE no Ubuntu](Introdução.md)
 
 ## 📥 Instalação
 * [Download e Instalção do IDE](instalacao/Download.md)
